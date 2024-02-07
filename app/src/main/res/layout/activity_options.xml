@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueDeep"
+    android:fitsSystemWindows="true"
+    tools:context=".view.OptionsActivity">
+
+    <TextView
+        android:id="@+id/top_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="Escolha uma linguagem"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunitoblack"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="43dp"
+        app:layout_constraintTop_toBottomOf="@id/top_text_view"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/phyton_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/phytonicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/javascript_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/javascripticon"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/c_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/cicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line1_layout"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/java_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/javaicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/cplus_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/cplusicon"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/csharp_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/csharpicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line2_layout"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ruby_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/rubyicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/swift_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/swifticon"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/php_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/phpicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line3_layout"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/web_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/webicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/go_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/goicon"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/kotlin_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/kotlinicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line4_layout"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/rust_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/rusticon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/typescript_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/typescripticon"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/circle_button_background"/>
+
+        <ImageButton
+            android:id="@+id/sql_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/sqlicon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_button_background"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/nunitoblack"
+        android:text="VOLTAR"
+        android:textColor="@color/blackText"
+        android:textSize="18sp"
+        android:backgroundTint="@color/yellow"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line5_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
